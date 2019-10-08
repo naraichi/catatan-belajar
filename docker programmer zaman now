@@ -1,0 +1,17 @@
+#docker
+- container registry adalah tempat yg digunakan u/ menyimpan image docker 
+- image docker akan disimpan di registry sebelum di deploy ke setiap container
+- image adalah hasil distribution file / bundle file aplikasi kita
+- container adalah image yg kita running, container adalah hasil instansiasi image
+- bisa menjalanankan container dr image yg sama
+- untuk melihat daftar container -> docker container ls
+- cara membuat container -> docker container create --name namacontainer namaimage:namatag -> docker container create --name mongoserver1 mongo:4.1
+- kondisi awal container dalam keadaan tidak aktif
+- melihat semua daftar container -> docker container ls --all
+- menjalankan container -> docker container start mongoserver1
+- sebelum menghapus container terlebih dahulu off kn container
+- off container -> docker container stop mongserver1 mongoserver2
+- u/ menhapus -> docker container rm mongoserver1 mongoserver2
+- mengekpos port container agar bisa diakses dr luar -> docker container create --name mongoserver1 -p 8080:27017 mongo:4.1
+- jika menjalankan container 2 dgn port server yg berbeda dr 8080 -> 8181
+- menghapus images -> docker image rm mongo:4.1
