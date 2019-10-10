@@ -1,0 +1,10 @@
+- OOP adalah metode pemrograman berorientasi objeck. Cara pandang OOP adalah memandang sebuah aplikasi sebuah objek dan real entity.
+- OOP adalah koleksi objek yang saling berinteraksi dan saling memberikan informasi satu dengan yang lainnya
+- Class adalah rancangan atau blue print dari sebuah objek. (jadi u/ membuat object kita harus membuat class atau cetakannya terlebih dahulu)
+- Kelas merupakan deskripsi abstrak informasi dan tingkah laku dari sekumpulan data.
+- Objek isinya data(atribut/variable) dan fungsi (method)
+- Class Diagram adalah sebuah diagram yang menggambarkan hubungan antar class.
+
+# ICONIX Process 
+- membuat functional requirement (gambaran bussiness analyst, pelanggan, end user, & stackholder)
+- membuat domain model (penamaan class/istilah yang akan dipakai diproses selanjutnya)
