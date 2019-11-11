@@ -1,3 +1,3 @@
 #kutipan
 - tidak bisa 1 identity di database mewakili banyak fungsi yg berbeda. akibatnya prosesnya panjang dan berbelok-belok
-- ketika laravel passport error karna tidak ditemukan class servicepassport : maka 1. php artisan dump-autoload 2. composer update 
+- ketika laravel passport error karna tidak ditemukan class servicepassport : maka 1. composer dump-autoload 2. composer update 
