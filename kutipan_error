@@ -1,3 +1,6 @@
 #kutipan
 - tidak bisa 1 identity di database mewakili banyak fungsi yg berbeda. akibatnya prosesnya panjang dan berbelok-belok
 - ketika laravel passport error karna tidak ditemukan class servicepassport : maka 1. composer dump-autoload 2. composer update 
+- untuk melakukan validasi mime type pada laravel, cukup gunakan mimes:pdf,dan lain-lain. pada aplikasi wps ketika pake server mimeTypenya 
+berubah dari yang lokal, solusinya kita harus mengujinya file upload dr file yang dibuat dari wps aplikasi 
+yaitu dengan script $r->file_surat->getMimeType()
