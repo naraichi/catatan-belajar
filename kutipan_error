@@ -4,3 +4,7 @@
 - untuk melakukan validasi mime type pada laravel, cukup gunakan mimes:pdf,dan lain-lain. pada aplikasi wps ketika pake server mimeTypenya 
 berubah dari yang lokal, solusinya kita harus mengujinya file upload dr file yang dibuat dari wps aplikasi 
 yaitu dengan script $r->file_surat->getMimeType()
+#02/06/2020
+- Biasa kalau kita hapus composer kita akan menghapus codeny di composer.json kemudian jalankan 'code composer intall'.
+- tetapi untuk laravel-debugbar sedikit beda, yakni jalankan langsung code di terminal 'composer remove barryvdh/laravel-debugbar' u/ alasan masih belum kita gunakan
+
