@@ -10,3 +10,5 @@ yaitu dengan script $r->file_surat->getMimeType()
 #17/06/2020
 - Terjadi error dalam pembuatan seeder karna kesalahan memasukkan model, pesan error ny class does not exit, cara mangatasiny dengan composer dump-autoload
 - Laravel error saya tidak tampil dan di direct ke 500 trus, sebelumny pernah oprek u/ uninstall laravel debugbar, cara mengatasinya dengan php artisan config:cache
+#15/07/2020
+- Error file_put_contents(.../storage/framework/cache/data/): failed to open stream: No such file or directory, cara mengatasinya dengan menghapus file di folder bootstrap/cache/config.php file.
