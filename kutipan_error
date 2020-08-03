@@ -12,3 +12,6 @@ yaitu dengan script $r->file_surat->getMimeType()
 - Laravel error saya tidak tampil dan di direct ke 500 trus, sebelumny pernah oprek u/ uninstall laravel debugbar, cara mengatasinya dengan php artisan config:cache
 #15/07/2020
 - Error file_put_contents(.../storage/framework/cache/data/): failed to open stream: No such file or directory, cara mengatasinya dengan menghapus file di folder bootstrap/cache/config.php file.
+#03/08/2020
+- Seringkali error dalam menampilkan gambar dari DOMPDF: Image not found or type unknown, setelah sebelumnya sudah menambahkan kode $dompdf = new Dompdf(array('enable_remote' => true));
+kemudian untuk mengatasinya saya tambahkan kode pada blade dengan mengganti link asset menjadi {{public_path('aa/bb')}}
