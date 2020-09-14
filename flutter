@@ -1,0 +1,25 @@
+daftar widget :
+- MaterialApp()
+- Scaffold() ==> tampilan dasar widget android, yg memiliki widget setidaknya appbar dan body
+- AppBar()
+- Text() ==> text/string
+- Center() ==> membuat widget jadi di tengah layar
+- Container() ==> u/ membungkus widget yg lain sehingga dapat memberikan margin, padding, bg , gradien
+
+#widget dasar
+1. Text() ==> text/string, memiliki banyak properti salah satunya :
+  -- maxLines: 2, #membuat maximal 2 baris text
+  -- overflow: TextOverflow.ellipsis, #membuat ... pada akhir kata yg terputus
+  -- textAlign: TextAlign.center, #text center
+
+2. Colomn ==> mengatur widget yg ada dalam colomn yaitu widget dari atas kebawah (vertikal)
+   -- mainAxisAlignment : mengatur aligment secara vertikal 
+   -- crossAxisAlignment : mengatur aligment colomn secara horizontal
+3. Row ==> mengatur widget yg ada dalam colomn yaitu widget dari kiri ke kanan (horizontal)
+ctt: bisa menggunakan kombinasi colomn di dalam row atau sebaliknya
+
+
+
+
+
+property children
