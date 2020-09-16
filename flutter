@@ -17,9 +17,14 @@ daftar widget :
    -- crossAxisAlignment : mengatur aligment colomn secara horizontal
 3. Row ==> mengatur widget yg ada dalam colomn yaitu widget dari kiri ke kanan (horizontal)
 ctt: bisa menggunakan kombinasi colomn di dalam row atau sebaliknya
-
-
-
-
-
-property children
+4. Container ==> property yg ada pada container
+    -- margin ==> mengatur jarak widget ke luar
+    ex - margin: EdgeInsets.fromLTRB(left, top, right, bottom)
+       - margin: EdgeInsets.all(10),
+    -- padding ==> mengatur jarak widget ke dalam
+    ex - padding: EdgeInsets.only(bottom: 20) //mengatur hanya bagian atas/bawah
+    -- boxdecoration
+    ex - decoration: BoxDecoration(
+           borderRadius: BorderRadius.circular(20), //membuat border
+           gradient: LinearGradient(colors: <Color>[Colors.green, Colors.blue], begin: Alignment.topLeft, end: Alignment.bottomRight) //gradient
+          ),
