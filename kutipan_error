@@ -15,3 +15,7 @@ yaitu dengan script $r->file_surat->getMimeType()
 #03/08/2020
 - Seringkali error dalam menampilkan gambar dari DOMPDF: Image not found or type unknown, setelah sebelumnya sudah menambahkan kode $dompdf = new Dompdf(array('enable_remote' => true));
 kemudian untuk mengatasinya saya tambahkan kode pada blade dengan mengganti link asset menjadi {{public_path('aa/bb')}}
+#23/09/2020
+- gitignore tidak bisa membaca perubahan sehingga terkadang masih menscan dapat perubahan yg seharusnya tidak ikut. perbaikan adalah dengan menambahkan kode pada terminal bash git 
+  git rm -rf --cached .
+  git add .
