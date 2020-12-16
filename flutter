@@ -28,3 +28,5 @@ ctt: bisa menggunakan kombinasi colomn di dalam row atau sebaliknya
            borderRadius: BorderRadius.circular(20), //membuat border
            gradient: LinearGradient(colors: <Color>[Colors.green, Colors.blue], begin: Alignment.topLeft, end: Alignment.bottomRight) //gradient
           ),
+5. STACK => menyusun widget menumpuk (kedepan)
+6. align => mengatur posisi widget dengan properti alignment :
