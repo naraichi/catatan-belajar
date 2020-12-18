@@ -1,3 +1,20 @@
+*MaterialApp adalah widget paling utama yang akan diakses pertama kali oleh fungsi main().
+*Scaffold adalah widget utama yakni sebagai wadah untuk semua widget lainnya seperti AppBar, Body, BottomNavigationBar, FloatingActionButton, dll
+3 klasifikasi widget dibawah scaffold :
+- standalone widget, - single child widget, - multiple children widget
+*Standalone widget adalah jenis widget yang tidak mengandung widget lain. biasanya digunakan oleh widget lainnya untuk mengisi konten dan styling properti.
+contoh widget: appbar, imageasset, icon, text, textstyle
+*Singel child widget adalah widget yang hanya dapat memiliki SATU widget di dalamnya.
+Tipe widget ini memiliki properti yang bernama “child” digunakan untuk memasukan widget lain kedalam single child widget.
+Contoh dari single child widget yaitu :Center, Container, Expanded, CircleAvatar, RaisedButton, dll
+*Multiple children widget adalah widget yang memiliki lebih dari satu widget di dalamnya dengan menggunakan properti "children".
+contoh : Row, Column, GridView, Stack, dll
+============================================================
+*Stateless Widget dapat diartikan sebagai Widget yang tidak dapat dirubah atau tidak akan pernah berubah.
+*Stateless Widget adalah widget dinamis atau dapat berubah. 
+sumber : https://belajarflutter.com/kumpulan-tutorial-flutter-untuk-pemula/
+============================================================	
+  
 daftar widget :
 - MaterialApp()
 - Scaffold() ==> tampilan dasar widget android, yg memiliki widget setidaknya appbar dan body
