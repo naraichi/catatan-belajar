@@ -1,0 +1,53 @@
+LIST adalah array, atau kelompok objek yang diurutkan. List adalah koleksi objek dengan panjang yang dapat diindeks.
+MAP adalah objek yang mengaitkan key dan value.
+JSON digunakan untuk tugas-tugas seperti bertukar data dengan server web. disimpan dalam bentuk string
+json encode = fungsi yang mengubah format data menjadi JSON
+===============
+Ada 3 metode penggunaan json : 
+Method 1: Direct conversion
+ketika ingin menggunakan objek pada instance model dari request json, pertama kita decode kemudian pakai constructor fromJson
+ex JSON → object: 
+String rawJson = '{"name":"Mary","age":30}';
+Map<String, dynamic> map = jsonDecode(rawJson);
+String name = map['name'];
+int age = map['age'];
+Person person = Person(name, age);
+Object → JSON
+Person person = Person('Mary', 30);
+Map<String, dynamic> map = {
+  'name': person.name,
+  'age': person.age
+};
+String rawJson = jsonEncode(map);
+--
+Method 2: Inside a model class
+class Person {
+  Person(this.name, this.age);
+  final String name;
+  final int age;
+  // named constructor
+  Person.fromJson(Map<String, dynamic> json)
+      : name = json['name'],
+        age = json['age'];
+  // method
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'age': age,
+    };
+  }
+}
+String rawJson = '{"name":"Mary","age":30}';
+Map<String, dynamic> map = jsonDecode(rawJson);
+Person person = Person.fromJson(map);
+--
+Method 3: Using the json_serializable package
+dependencies:
+  json_annotation: ^2.0.0
+
+dev_dependencies:
+  build_runner: ^1.0.0
+  json_serializable: ^2.0.0
+
+sumber : https://suragch.medium.com/parsing-simple-json-in-flutter-83ee1809a6ab
+**data json ketika hendak dijadikan list harus map
