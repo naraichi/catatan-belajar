@@ -3,9 +3,8 @@ MAP adalah objek yang mengaitkan key dan value.
 JSON digunakan untuk tugas-tugas seperti bertukar data dengan server web. disimpan dalam bentuk string
 json encode = fungsi yang mengubah format data menjadi JSON
 ===============
-Ada 3 metode penggunaan json : 
+Ada 3 metode penggunaan data json ke object : 
 Method 1: Direct conversion
-ketika ingin menggunakan objek pada instance model dari request json, pertama kita decode kemudian pakai constructor fromJson
 ex JSON → object: 
 String rawJson = '{"name":"Mary","age":30}';
 Map<String, dynamic> map = jsonDecode(rawJson);
