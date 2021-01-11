@@ -24,4 +24,7 @@ kemudian untuk mengatasinya saya tambahkan kode pada blade dengan mengganti link
   buka application/config.php, ganti $config['log_threshold'] = 2; //for debug messages, buka log di application/logs/..
 - terjadi error ERROR - 2020-10-20 16:14:30 --> Severity: error --> Exception: Session: Configured save path '' is not a directory, doesn't exist or cannot be created. /home/wwwroot/pilgub.jambikota.go.id/system/libraries/Session/drivers/Session_files_driver.php 138
   replace $config['sess_save_path'] = NULL; menjadi $config['sess_save_path'] = sys_get_temp_dir();
-
+#11/01/2021
+- error on docker..
+  Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+  solusi ? systemctl start docker
