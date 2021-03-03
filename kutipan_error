@@ -28,3 +28,9 @@ kemudian untuk mengatasinya saya tambahkan kode pada blade dengan mengganti link
 - error on docker..
   Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
   solusi ? systemctl start docker
+#03/03/2021
+-  error composer : undefined index: name 
+  solusi ? 1. buka file vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php
+  2. find : $packages = json_decode($this->files->get($path), true);
+  3. add: $installed = json_decode($this->files->get($path), true);
+          $packages = $installed['packages'] ?? $installed;
