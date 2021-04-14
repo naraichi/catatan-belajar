@@ -34,3 +34,8 @@ kemudian untuk mengatasinya saya tambahkan kode pada blade dengan mengganti link
   2. find : $packages = json_decode($this->files->get($path), true);
   3. add: $installed = json_decode($this->files->get($path), true);
           $packages = $installed['packages'] ?? $installed;
+#14/04/2021
+- error tidak bisa post element input dengan attribute disabled
+  solusi ? gunakan readonly
+  FYI, per 17.12.1 in the HTML 4 spec (disbled): - Disabled controls do not receive focus. -Disabled controls are skipped in tabbing navigation. -Disabled controls cannot be successfully posted.
+  FYI, per 17.12.2 in the HTML 4 spec (readonly): - Read-only elements receive focus but cannot be modified by the user. -Read-only elements are included in tabbing navigation. -Read-only elements are successfully posted.
