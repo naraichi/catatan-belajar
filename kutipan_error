@@ -39,3 +39,8 @@ kemudian untuk mengatasinya saya tambahkan kode pada blade dengan mengganti link
   solusi ? gunakan readonly
   FYI, per 17.12.1 in the HTML 4 spec (disbled): - Disabled controls do not receive focus. -Disabled controls are skipped in tabbing navigation. -Disabled controls cannot be successfully posted.
   FYI, per 17.12.2 in the HTML 4 spec (readonly): - Read-only elements receive focus but cannot be modified by the user. -Read-only elements are included in tabbing navigation. -Read-only elements are successfully posted.
+#16/12/2021
+- error guzzle ketika server sumber penyedia API down
+  solusi ? diberi http error menjadi false
+  $response = $client->request('GET', 'https://sikd.jambikota.go.id/api/urusan', ['verify' => false, 'http_errors' => false]);
+  
